@@ -98,7 +98,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RequestLogger.NLog\RequestLogger.NLog.csproj">
+    <ProjectReference Include="..\..\RequestLogger.NLog\RequestLogger.NLog.csproj">
       <Project>{ad94c82b-1e7c-40f9-881b-7a4486c724c8}</Project>
       <Name>RequestLogger.NLog</Name>
     </ProjectReference>

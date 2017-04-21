@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{64
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample", "Examples\AspNetExample\AspNetExample.csproj", "{6B2B4631-0EEC-423E-A1B0-37C08D915F65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinExample", "OwinExample\OwinExample.csproj", "{0F16CE01-6448-475E-968B-0BE853773BEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinExample", "Examples\OwinExample\OwinExample.csproj", "{0F16CE01-6448-475E-968B-0BE853773BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
