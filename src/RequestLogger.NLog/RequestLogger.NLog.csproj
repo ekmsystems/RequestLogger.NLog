@@ -48,9 +48,7 @@
   <ItemGroup>
     <Compile Include="Formatters\DefaultLogFormatter.cs" />
     <Compile Include="Formatters\ILogFormatter.cs" />
-    <Compile Include="NLogPropertyKeys.cs" />
     <Compile Include="NLogLogger.cs" />
-    <Compile Include="NLogLoggerConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
