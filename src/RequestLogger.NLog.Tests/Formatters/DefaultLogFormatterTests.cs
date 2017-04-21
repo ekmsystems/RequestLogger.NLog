@@ -33,6 +33,28 @@ namespace RequestLogger.NLog.Tests.Formatters
         }
 
         [Test]
+        public void Format_ShouldSet_LevelToInfo()
+        {
+            var requestData = new RequestData();
+            var responseData = new ResponseData();
+
+            var result = _formatter.Format(requestData, responseData);
+
+            Assert.AreEqual(LogLevel.Info, result.Level);
+        }
+
+        [Test]
+        public void Format_ShouldSet_Message()
+        {
+            var requestData = new RequestData();
+            var responseData = new ResponseData();
+
+            var result = _formatter.Format(requestData, responseData);
+
+            Assert.AreEqual("Request processed", result.Message);
+        }
+
+        [Test]
         public void Format_ShouldSet_PropertiesForRequestData()
         {
             var requestData = new RequestData
@@ -88,6 +110,30 @@ namespace RequestLogger.NLog.Tests.Formatters
             var result = _formatter.Format(requestData, responseData, ex);
 
             Assert.AreEqual(ex, result.Exception);
+        }
+
+        [Test]
+        public void Format_WithException_ShouldSet_LevelToError()
+        {
+            var requestData = new RequestData();
+            var responseData = new ResponseData();
+            var ex = new Exception();
+
+            var result = _formatter.Format(requestData, responseData, ex);
+
+            Assert.AreEqual(LogLevel.Error, result.Level);
+        }
+
+        [Test]
+        public void Format_WithException_ShouldSet_Message()
+        {
+            var requestData = new RequestData();
+            var responseData = new ResponseData();
+            var ex = new Exception();
+
+            var result = _formatter.Format(requestData, responseData, ex);
+
+            Assert.AreEqual("An error occurred", result.Message);
         }
 
         [Test]

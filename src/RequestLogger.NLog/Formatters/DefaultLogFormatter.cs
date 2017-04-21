@@ -12,7 +12,7 @@ namespace RequestLogger.NLog.Formatters
         {
             var info = new LogEventInfo
             {
-                Level = LogLevel.Error,
+                Level = ex == null ? LogLevel.Info : LogLevel.Error,
                 Message = ex == null ? "Request processed" : "An error occurred",
                 Exception = ex
             };
