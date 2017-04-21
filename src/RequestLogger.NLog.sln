@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{64
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample", "Examples\AspNetExample\AspNetExample.csproj", "{6B2B4631-0EEC-423E-A1B0-37C08D915F65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwinExample", "OwinExample\OwinExample.csproj", "{0F16CE01-6448-475E-968B-0BE853773BEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +31,16 @@ Global
 		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F16CE01-6448-475E-968B-0BE853773BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F16CE01-6448-475E-968B-0BE853773BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F16CE01-6448-475E-968B-0BE853773BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F16CE01-6448-475E-968B-0BE853773BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6B2B4631-0EEC-423E-A1B0-37C08D915F65} = {640DDBED-5500-4BA6-ABD8-AA79E2816BBD}
+		{0F16CE01-6448-475E-968B-0BE853773BEE} = {640DDBED-5500-4BA6-ABD8-AA79E2816BBD}
 	EndGlobalSection
 EndGlobal
