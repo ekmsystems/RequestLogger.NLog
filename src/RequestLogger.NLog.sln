@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestLogger.NLog", "Reque
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestLogger.NLog.Tests", "RequestLogger.NLog.Tests\RequestLogger.NLog.Tests.csproj", "{63781EE4-5679-4AD2-8BD9-1347F35DF745}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{640DDBED-5500-4BA6-ABD8-AA79E2816BBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetExample", "Examples\AspNetExample\AspNetExample.csproj", "{6B2B4631-0EEC-423E-A1B0-37C08D915F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +25,15 @@ Global
 		{63781EE4-5679-4AD2-8BD9-1347F35DF745}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63781EE4-5679-4AD2-8BD9-1347F35DF745}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63781EE4-5679-4AD2-8BD9-1347F35DF745}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2B4631-0EEC-423E-A1B0-37C08D915F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B2B4631-0EEC-423E-A1B0-37C08D915F65} = {640DDBED-5500-4BA6-ABD8-AA79E2816BBD}
 	EndGlobalSection
 EndGlobal
