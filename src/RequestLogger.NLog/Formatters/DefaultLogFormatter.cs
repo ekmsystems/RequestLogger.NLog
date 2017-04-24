@@ -41,7 +41,7 @@ namespace RequestLogger.NLog.Formatters
         private static string ParseHeader(IDictionary<string, string[]> header)
         {
             var values = (header ?? new Dictionary<string, string[]>())
-                .Select(x => string.Format("{0}: [{1}]", x.Key, string.Join(", ", x.Value)))
+                .Select(x => $"{x.Key}: [{string.Join(", ", x.Value)}]")
                 .ToArray();
 
             return string.Join(", ", values);
