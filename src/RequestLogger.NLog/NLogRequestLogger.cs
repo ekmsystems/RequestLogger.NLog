@@ -4,12 +4,12 @@ using RequestLogger.NLog.Formatters;
 
 namespace RequestLogger.NLog
 {
-    public class NLogLogger : IRequestLogger
+    public class NLogRequestLogger : IRequestLogger
     {
         private readonly ILogger _logger;
         private readonly ILogFormatter _formatter;
 
-        public NLogLogger(ILogger logger, ILogFormatter formatter = null)
+        public NLogRequestLogger(ILogger logger, ILogFormatter formatter = null)
         {
             _logger = logger;
             _formatter = formatter ?? new DefaultLogFormatter();

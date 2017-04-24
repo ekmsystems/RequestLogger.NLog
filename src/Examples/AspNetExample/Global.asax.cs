@@ -29,7 +29,7 @@ namespace AspNetExample
         private static RequestLoggerModule CreateRequestLoggerModule()
         {
             var logger = LogManager.GetLogger("RequestLogger");
-            var requestLogger = new NLogLogger(logger);
+            var requestLogger = new NLogRequestLogger(logger);
             return new RequestLoggerModule(requestLogger);
         }
     }

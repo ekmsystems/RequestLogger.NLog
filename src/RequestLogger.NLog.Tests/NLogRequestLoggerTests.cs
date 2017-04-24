@@ -8,19 +8,19 @@ namespace RequestLogger.NLog.Tests
 {
     [TestFixture]
     [Parallelizable]
-    public class NLogLoggerTests
+    public class NLogRequestLoggerTests
     {
         [SetUp]
         public void SetUp()
         {
             _logger = new Mock<ILogger>();
             _formatter = new Mock<ILogFormatter>();
-            _requestLogger = new NLogLogger(_logger.Object, _formatter.Object);
+            _requestLogger = new NLogRequestLogger(_logger.Object, _formatter.Object);
         }
 
         private Mock<ILogger> _logger;
         private Mock<ILogFormatter> _formatter;
-        private NLogLogger _requestLogger;
+        private NLogRequestLogger _requestLogger;
 
         [Test]
         public void Log_ShouldCall_Logger_Log()

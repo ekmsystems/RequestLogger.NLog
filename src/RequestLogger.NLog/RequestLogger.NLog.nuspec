@@ -6,7 +6,8 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <projectUrl>https://github.com/mrstebo/RequestLogger</projectUrl>
+    <projectUrl>https://github.com/ekmsystems/RequestLogger.NLog</projectUrl>
+    <licenseUrl>https://github.com/ekmsystems/RequestLogger.NLog/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes></releaseNotes>
