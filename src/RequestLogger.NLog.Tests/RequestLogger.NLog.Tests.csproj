@@ -51,8 +51,8 @@
       <HintPath>..\packages\NUnit.3.6.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="RequestLogger, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RequestLogger.2.0.1\lib\net35\RequestLogger.dll</HintPath>
+    <Reference Include="RequestLogger, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RequestLogger.2.0.0\lib\net35\RequestLogger.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
