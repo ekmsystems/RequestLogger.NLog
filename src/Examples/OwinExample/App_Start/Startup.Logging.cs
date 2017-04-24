@@ -10,7 +10,7 @@ namespace OwinExample
         private static void ConfigureLogging(IAppBuilder app)
         {
             var logger = LogManager.GetLogger("RequestLogger");
-            var requestLogger = new NLogLogger(logger);
+            var requestLogger = new NLogRequestLogger(logger);
 
             app.UseRequestLoggerMiddleware(requestLogger);
         }
